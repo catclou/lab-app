@@ -1,0 +1,42 @@
+/* VARIABLES */
+$navbar-bg-color: #333;
+$navbar-text-color: #fff;
+$navbar-text-hover-color: #ddd;
+$navbar-font: 'Montserrat', sans-serif;
+
+/* STYLE */
+.navbar {
+    background-color: $navbar-bg-color;
+    color: $navbar-text-color;
+    
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    li{
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: $navbar-text-color;
+            font-family: $navbar-font;
+            text-transform: capitalize;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+    
+            &:hover {
+                text-decoration: none;
+                color: $navbar-text-hover-color;
+            }
+        }
+    }
+
+}
