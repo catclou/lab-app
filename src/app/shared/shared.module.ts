@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { StandardButtonComponent } from './components/standard-button/standard-button.component';
 
 
 
 @NgModule({
   declarations: [
+    StandardButtonComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ],
   exports: [
+    StandardButtonComponent
   ]
 })
 /**
